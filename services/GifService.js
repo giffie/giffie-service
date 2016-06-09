@@ -10,6 +10,19 @@ var GifService = function () {
 
 GifService.prototype = {
 
+    isValidGifDate: function ( data ) {
+        var isValid = true;
+
+
+        return isValid;
+    },
+
+    isValidGifUpdate: function ( data ) {
+        var isValid = true;
+
+
+        return isValid;
+    }
 };
 
 module.exports = new GifService(); // Singleton

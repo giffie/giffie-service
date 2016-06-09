@@ -1,17 +1,11 @@
 var bodyParser = require('body-parser');
 var debug = require('debug')('giffie-gifs');
 var express = require('express');
+var gifService = require('../services/GifService');
 var helpers = require('../lib/helpers');
 var Q = require('q');
 var router = express.Router();
 
-
-var gifPostIsValid = function ( request ) {
-    var isValid = true;
-
-
-    return isValid;
-};
 
 /**
  *
@@ -36,7 +30,7 @@ var gifPostIsValid = function ( request ) {
 
 router.post('/gifs', bodyParser.json(), function ( req, res ) {
 
-    if ( gifPostIsValid( req ) ) {
+    if ( gifService.isValidGifData( req.body || {} ) ) {
 
 
 
