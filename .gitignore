@@ -1,0 +1,4 @@
+hideit.txt
+node_modules/
+idea/
+*.log
