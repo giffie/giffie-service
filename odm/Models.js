@@ -11,7 +11,7 @@ var gifSchema = new mongoose.Schema({
 });
 
 /**
- *  Media endpoints
+ *  TODO: Media endpoints for multiple media servers
  */
 
 exports.Gif = mongoose.model('gif', gifSchema );
